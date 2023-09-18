@@ -1,14 +1,28 @@
 //Global Variable
+int appWidth, appHeight;
+float xRect, yRect, widthRect, heightRect
+
 //
-void setup() 
-  //print & println
-  print("Hello") ;
-  print(" world") ;
-  //caractor escapes, tab, new
-void draw () {} //End draw
+void setup() {
+//Print & Println
+println("Hello World");
+println("Width:"+width, "\t", "Height:"+height); 
+println("Display Width: "+displayWidth, "\tDisplay Width: "+displayHeight);
+//Character Escapes, tab, new //End setup
 //
-void keypressed() {} //End keypressed
+//fullscreen();
+size(600, 400); } //End setup
+int appWidth = width;
+int appHeight = height;
 //
-void mousepressed() {} // End mousepressed
-//
-//End MAIN program
+//Population
+xRect = appWidth*o;
+yRect = appHeight*o;
+widthRect = appWidth-1;
+heightRect = appHeight-1;
+} //End setup
+void draw() { 
+  rect(xRect, yRect, widthRect, heightRect);
+  //End draw
+rect(appWidth, appWidth, appWidth, appWidth);
+} 
